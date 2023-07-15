@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #ifndef SCAVTRAP_HPP
 #define SCAVTRAP_HPP
 
@@ -20,12 +19,11 @@
 class ScavTrap : public ClapTrap {
 
 public:
+  ScavTrap(const std::string &name);
+  virtual ~ScavTrap();
 
-    ScavTrap(const std::string &name);
-    virtual ~ScavTrap();
-
-    void guardGate( void );
-    void attack(const std::string &target);
+  void guardGate(void);
+  void attack(const std::string &target);
 };
 
 #endif

@@ -19,24 +19,24 @@
 class ClapTrap {
 
 protected:
-    std::string _name;
-    int _hp;
-    int _atk;
-    int _ep;
+  std::string _name;
+  int _hp;
+  int _atk;
+  int _ep;
 
 public:
-    ClapTrap(std::string const &name);
-    ClapTrap(ClapTrap &other);
-    ClapTrap &operator=(ClapTrap const &other);
-    virtual ~ClapTrap();
+  ClapTrap(std::string const &name);
+  ClapTrap(ClapTrap &other);
+  ClapTrap &operator=(ClapTrap const &other);
+  virtual ~ClapTrap();
 
-    virtual void attack(const std::string &target);
-    void takeDamage(unsigned int amount);
-    void beRepaired(unsigned int amount);
+  virtual void attack(const std::string &target);
+  void takeDamage(unsigned int amount);
+  void beRepaired(unsigned int amount);
 
-    void setEP(int amount);
-    void setHP(int amount);
-    void setATK(int amount);
+  void setEP(int amount);
+  void setHP(int amount);
+  void setATK(int amount);
 };
 
 #endif

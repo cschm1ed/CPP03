@@ -14,30 +14,30 @@
 #include <iostream>
 
 int main() {
-    ClapTrap Guillaume("Guillaume");
-    ClapTrap Bethan("Bethan");
-    ClapTrap Alberto(Bethan);
+  ClapTrap Guillaume("Guillaume");
+  ClapTrap Bethan("Bethan");
+  ClapTrap Alberto(Bethan);
 
-    std::cout << "\n";
-    Guillaume.attack("Bethan");
-    Guillaume.beRepaired(10);
-    Guillaume.attack("Bethan");
-    Guillaume.attack("Bethan");
-    Bethan.takeDamage(0);
-    std::cout << "\n";
+  std::cout << "\n";
+  Guillaume.attack("Bethan");
+  Guillaume.beRepaired(10);
+  Guillaume.attack("Bethan");
+  Guillaume.attack("Bethan");
+  Bethan.takeDamage(0);
+  std::cout << "\n";
 
-    Bethan.beRepaired(10);
-    Bethan.attack("Alberto");
-    Alberto.takeDamage(11);
-    std::cout << "\n";
+  Bethan.beRepaired(10);
+  Bethan.attack("Alberto");
+  Alberto.takeDamage(11);
+  std::cout << "\n";
 
-    Alberto.attack("Guillaume");
-    std::cout << "\n";
+  Alberto.attack("Guillaume");
+  std::cout << "\n";
 
-    Guillaume = Bethan;
-    Guillaume.attack("Bethan");
+  Guillaume = Bethan;
+  Guillaume.attack("Bethan");
 
-    Bethan.beRepaired(100);
-    std::cout << "\n";
-    return 0;
+  Bethan.beRepaired(100);
+  std::cout << "\n";
+  return 0;
 }
